@@ -1,0 +1,1 @@
+c:\users\joseph\documents\visual studio 2015\Projects\MonsterHunterWorldWeaponCalculator\MonsterHunterWorldWeaponCalculator\bin\Debug\MonsterHunterWorldWeaponCalculator.exe.config
