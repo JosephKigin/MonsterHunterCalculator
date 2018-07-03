@@ -6,7 +6,43 @@
         xmlns:local="clr-namespace:MonsterHunterWorldWeaponCalculator"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+    <Grid RenderTransformOrigin="0.5,0.5">
+        <ComboBox x:Name="comboBoxClass" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="Long Sword" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="Great Sword" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="Duel Blades" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="Sword and Shield" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="Switch Axe" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="Charge Blade" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="Hammer" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="Hunting Horn" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="Lance" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="Gunlance" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="Insect Glaive" HorizontalAlignment="Left" Width="118"/>
+        </ComboBox>
+        <Label x:Name="labelClass" Content="Class&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="38" Height="26"/>
+        <Label x:Name="labelRank" Content="Rank" HorizontalAlignment="Left" Margin="153,10,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="comboBoxRank" HorizontalAlignment="Left" Margin="153,36,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="Low" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="High" HorizontalAlignment="Left" Width="118"/>
+        </ComboBox>
+        <Label x:Name="labelWeaponStats" Content="Weapon Stats" HorizontalAlignment="Left" Margin="10,85,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxRawDamage" HorizontalAlignment="Left" Height="23" Margin="124,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50" TextAlignment="Right" MaxLength="4"/>
+        <Label x:Name="labelRawDamage" Content="Damage" HorizontalAlignment="Left" Margin="10,111,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxEDamage" HorizontalAlignment="Left" Height="23" Margin="124,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50" TextAlignment="Right" MaxLength="4"/>
+        <Label x:Name="labelEDamage" Content="Elemental Damage" HorizontalAlignment="Left" Margin="10,142,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxAffinity" HorizontalAlignment="Left" Height="23" Margin="304,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50" TextAlignment="Right" MaxLength="3"/>
+        <Label x:Name="labelAffinity" Content="Affinity" HorizontalAlignment="Left" Margin="216,114,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labelSharpness" Content="Sharpness" HorizontalAlignment="Left" Margin="216,142,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="comboBoxSharpness" HorizontalAlignment="Left" Margin="304,146,0,0" VerticalAlignment="Top" Width="70">
+            <ComboBoxItem Content="Red" HorizontalAlignment="Left" Width="50"/>
+            <ComboBoxItem Content="Orange" HorizontalAlignment="Left" Width="50"/>
+            <ComboBoxItem Content="Yellow" HorizontalAlignment="Left" Width="50"/>
+            <ComboBoxItem Content="Green" HorizontalAlignment="Left" Width="50"/>
+            <ComboBoxItem Content="Blue" HorizontalAlignment="Left" Width="50"/>
+            <ComboBoxItem Content="White" HorizontalAlignment="Left" Width="50"/>
+        </ComboBox>
+        <Button x:Name="buttonCalculate" Content="Calculate" HorizontalAlignment="Left" Margin="170,188,0,0" VerticalAlignment="Top" Width="75" Click="buttonCalculate_Click"/>
+        <Label x:Name="labelCalculatedDamage" Content="" HorizontalAlignment="Left" Margin="189,225,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>
